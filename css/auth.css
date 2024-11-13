@@ -1,0 +1,161 @@
+/* general reset for all elements */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary: #e2e9eb;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* main container */
+.auth-container{
+    display: flex;
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* left image section*/
+.auth-image{
+    flex: 1;
+    background-color: #000;
+}
+
+.auth-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* right form section */
+.all-auth-forms{
+    flex: 0.6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+
+.auth-form h2{
+    margin-bottom: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.external{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.google-social-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.apple-social-icon{
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+}
+
+.google-btn,
+.apple-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.google-btn{
+    background: #000;
+    color: white;
+}
+
+.input-containers{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.input-containers input{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.auth-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    background-color: var(--primary);
+    color: #000;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.auth-button:hover{
+    background: mediumturquoise;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+    margin: 20px;
+}
+
+.forgot-password{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#switch-to-login,#switch-to-signup{
+    color: #007bff;
+    cursor: pointer;
+}
